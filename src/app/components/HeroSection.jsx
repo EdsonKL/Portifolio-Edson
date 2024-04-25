@@ -10,16 +10,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 function HeroSection() {
-  const downloadFile = (url) => {
-    const fileName = url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.ref = url;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  };
-
   return (
     <section>
       <motion.div
@@ -29,7 +19,7 @@ function HeroSection() {
         className="grid grid-cols-1 md:grid-cols-12"
       >
         <div className="col-span-7 place-self-center text-center sm:text-center md:text-left  md:max-w-max">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold flex flex-col">
+          <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold flex flex-col">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-900">
               Olá, eu sou{" "}
             </span>
@@ -53,10 +43,10 @@ function HeroSection() {
             SEO.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-200 text-white">
-              <a href="#contact">Contato</a>
+            <button className="px-4 py-3 w-full md:w-fit rounded-full mr-4  bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-200 text-white">
+              <a href="#contact" className="block w-full h-full">Contato</a>
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-800 text-white mt-3">
+            <button className="px-1 py-1 w-full md:w-fit rounded-full bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-800 text-white mt-3">
               <a
                 href="https://drive.google.com/file/d/1tF85vF6ncM-g6J9JAOV2K2ZQ4CL05wcr/view?usp=sharing"
                 target="_blank"

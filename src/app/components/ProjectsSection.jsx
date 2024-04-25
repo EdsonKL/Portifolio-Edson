@@ -5,16 +5,18 @@ const ProjectsData = [
   {
     id: 1,
     title: "Portifolio em Next.js",
-    description: "Project 1 description",
+    description:
+      "Projeto criado para apresentar minha qualidades e habilidades, além de praticar mais funcionalidades front-end",
     image: "/project1.png",
     tag: ["All", "Web"],
-    gitUrl: "",
+    gitUrl: "https://github.com/EdsonKL/PortifolioOFC",
     previewUrl: "/",
   },
   {
     id: 2,
     title: "Agencia de Marketing",
-    description: "Project 2 description",
+    description:
+      "Landing Page criada para testar funcionalidades de front-end e gerenciamento de envio de e-mails",
     image: "/project2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/landingpageNext",
@@ -23,7 +25,8 @@ const ProjectsData = [
   {
     id: 3,
     title: "Todo List com React.js",
-    description: "Project 3 description",
+    description:
+      "Uma lista de afazeres desenvolvido com React, para treinar conceitos dessa biblioteca tão usada no mercado atualmente",
     image: "/project3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/to-do-list-react",
@@ -32,7 +35,7 @@ const ProjectsData = [
   {
     id: 4,
     title: "Landing Page Academia",
-    description: "Project 4 description",
+    description: "Landing page simples, apenas para revisar alguns conceitos",
     image: "/project4.png",
     tag: ["All", "Web"],
     gitUrl:
@@ -42,7 +45,8 @@ const ProjectsData = [
   {
     id: 5,
     title: "Buscador de CEP",
-    description: "Project 5 description",
+    description:
+      "Projeto criado para poder buscar informações do CEP inserido, usando a API do ViaCEP para acessar os dados",
     image: "/project5.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/BuscadorDeCEP-Javascript",
@@ -51,7 +55,8 @@ const ProjectsData = [
   {
     id: 6,
     title: "Calculadora.js",
-    description: "Project 6 description",
+    description:
+      "Uma calculadora com funcionalidades simples para operações normais e sistema de copiar o resultado e modo escuro e claro",
     image: "/project6.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/Calculadora-Javascript/tree/main/src",

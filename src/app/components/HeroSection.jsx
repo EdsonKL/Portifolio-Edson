@@ -3,11 +3,23 @@
 import Image from "next/image";
 import React from "react";
 import avatar from "../../../public/avatar.png";
+import resume from "../../../public/project1.png";
+const pdf = "../../../public/resume.pdf";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 function HeroSection() {
+  const downloadFile = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.ref = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <section>
       <motion.div
@@ -45,9 +57,13 @@ function HeroSection() {
               Contato
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <a
+                href="https://drive.google.com/file/d/1tF85vF6ncM-g6J9JAOV2K2ZQ4CL05wcr/view?usp=sharing"
+                target="_blank"
+                className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+              >
                 Baixar CV
-              </span>
+              </a>
             </button>
           </div>
         </div>

@@ -53,9 +53,9 @@ function HeroSection() {
             SEO.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-200 text-white">
+            <a href="#contact" className="px-6 py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-200 text-white">
               Contato
-            </button>
+            </a>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-800 text-white mt-3">
               <a
                 href="https://drive.google.com/file/d/1tF85vF6ncM-g6J9JAOV2K2ZQ4CL05wcr/view?usp=sharing"

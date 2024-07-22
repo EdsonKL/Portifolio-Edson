@@ -3,6 +3,8 @@ import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import AboutImage from "../../../public/about.jpg";
 import TabButton from "./TabButton";
+import { motion } from "framer-motion";
+
 
 const TAB_DATA = [
   {
@@ -46,40 +48,46 @@ function AboutSection() {
   };
 
   return (
-    <section id="about" className="text-white pt-10">
-      <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap16 sm:py-16 xl:16">
-        <Image src={AboutImage} width={530} height={530} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl  font-bold text-white mb-4">Sobre mim</h2>
-          <p className="text-base md:text-sm lg:text-lg ">
-            Olá, eu sou um desenvolvedor Front-end com paixão por criar
-            aplicações interativas e responsivas. Adoro estar aprendendo e
-            sempre estou procurando formas de expandir meu conhecimento e
-            habilidades. Sempre animado para trabalhar com outros
-            desenvolvedores para criar aplicações incriveis.
-          </p>
-          <div className="flex flex-row   justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("front")}
-              active={tab == "front"}
-            >
-              {" "}
-              Front-end{""}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("back")}
-              active={tab == "back"}
-            >
-              {" "}
-              Back-end{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8 md:mt-4">
-            {TAB_DATA.find((t) => t.id == tab).content}
+    <motion.div initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3.8 }}>
+
+      <section id="about" className="text-white pt-10">
+        <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap16 sm:py-16 xl:16">
+          <Image src={AboutImage} width={530} height={530} />
+          <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+            <h2 className="text-4xl  font-bold text-white mb-4">Sobre mim</h2>
+            <p className="text-base md:text-sm lg:text-lg ">
+              Olá, eu sou um desenvolvedor Front-end com paixão por criar
+              aplicações interativas e responsivas. Adoro estar aprendendo e
+              sempre estou procurando formas de expandir meu conhecimento e
+              habilidades. Sempre animado para trabalhar com outros
+              desenvolvedores para criar aplicações incriveis.
+            </p>
+            <div className="flex flex-row   justify-start mt-8">
+              <TabButton
+                selectTab={() => handleTabChange("front")}
+                active={tab == "front"}
+              >
+                {" "}
+                Front-end{""}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("back")}
+                active={tab == "back"}
+              >
+                {" "}
+                Back-end{" "}
+              </TabButton>
+            </div>
+            <div className="mt-8 md:mt-4">
+              {TAB_DATA.find((t) => t.id == tab).content}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </motion.div>
+
   );
 }
 

@@ -6,7 +6,7 @@ const ProjectsData = [
     id: 1,
     title: "Portifolio em Next.js",
     description:
-      "Projeto criado para apresentar minha qualidades e habilidades, além de praticar mais funcionalidades front-end",
+      "Projeto criado para apresentar minha qualidades e habilidades, além de praticar mais funcionalidades front-end como: Next, Tailwind, envio de emails e etc",
     image: "/project1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/PortifolioOFC",
@@ -16,7 +16,7 @@ const ProjectsData = [
     id: 2,
     title: "Agencia de Marketing",
     description:
-      "Landing Page criada para testar funcionalidades de front-end e gerenciamento de envio de e-mails",
+      "Landing Page criada para aprimorar funcionalidades de front-end, gerenciamento de envio de e-mails e SASS",
     image: "/project2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/landingpageNext",
@@ -24,23 +24,23 @@ const ProjectsData = [
   },
   {
     id: 3,
-    title: "Todo List com React.js",
-    description:
-      "Uma lista de afazeres desenvolvido com React, para treinar conceitos dessa biblioteca tão usada no mercado atualmente",
+    title: "Site Para um Jogo",
+    description: "Site desenvolvido no programa Trilhas-Inova. Projeto realizado por uma equipe que liderei e coloquei em prática várias skills necessárias no mercado de trabalho",
     image: "/project3.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/EdsonKL/to-do-list-react",
-    previewUrl: "https://edsonkl.github.io/to-do-list-react/",
+    gitUrl:
+      "https://github.com/EdsonKL/frontend-secti",
+    previewUrl: "https://frontend-secti.vercel.app/",
   },
   {
     id: 4,
-    title: "Landing Page Academia",
-    description: "Landing page simples, apenas para revisar alguns conceitos",
+    title: "Todo List com React.js",
+    description:
+      "Uma lista de afazeres desenvolvido com React, para treinar conceitos dessa biblioteca tão usada no mercado atualmente",
     image: "/project4.png",
     tag: ["All", "Web"],
-    gitUrl:
-      "https://github.com/EdsonKL/Landing-Page-Academia/tree/main/Landing",
-    previewUrl: "https://main--merry-torrone-2458ad.netlify.app",
+    gitUrl: "https://github.com/EdsonKL/to-do-list-react",
+    previewUrl: "https://edsonkl.github.io/to-do-list-react/",
   },
   {
     id: 5,
@@ -66,6 +66,7 @@ const ProjectsData = [
 
 function ProjectsSection() {
   return (
+    
     <section id="projects" className=" pt-10">
       <h2 className="text-center pt-12 text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Meus Projetos

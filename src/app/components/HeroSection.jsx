@@ -3,8 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import avatar from "../../../public/avatar.png";
-import resume from "../../../public/project1.png";
-const pdf = "../../../public/resume.pdf";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -13,9 +11,9 @@ function HeroSection() {
   return (
     <section>
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0.2 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 1.5 }}
         className="grid grid-cols-1 md:grid-cols-12"
       >
         <div className="col-span-7 place-self-center text-center sm:text-center md:text-left  md:max-w-max">
@@ -25,9 +23,8 @@ function HeroSection() {
             </span>
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 " Edson",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000, 
                 " Desenvolvedor",
                 1000,
               ]}

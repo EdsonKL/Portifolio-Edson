@@ -13,7 +13,7 @@ function HeroSection() {
       <motion.div
         initial={{ opacity: 0.2 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1 }}
         className="grid grid-cols-1 md:grid-cols-12"
       >
         <div className="col-span-7 place-self-center text-center sm:text-center md:text-left  md:max-w-max">

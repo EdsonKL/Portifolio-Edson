@@ -34,6 +34,16 @@ const ProjectsData = [
   },
   {
     id: 4,
+    title: "Cultura Maranhense",
+    description:
+      "Site desenvolvido no programa Trilhas-Inova. Utilizei React para desenvolver um site de cultura do Maranhão, com foco em design responsivo e componentes reutilizáveis",
+    image: "/projeto4.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/EdsonKL/Calculadora-Javascript/tree/main/src",
+    previewUrl: "https://main--bucolic-bienenstitch-42aff8.netlify.app",
+  },
+  {
+    id: 5,
     title: "Todo List com React.js",
     description:
       "Uma lista de afazeres desenvolvido com React, para treinar conceitos dessa biblioteca tão usada no mercado atualmente",
@@ -43,7 +53,7 @@ const ProjectsData = [
     previewUrl: "https://edsonkl.github.io/to-do-list-react/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Buscador de CEP",
     description:
       "Projeto criado para poder buscar informações do CEP inserido, usando a API do ViaCEP para acessar os dados",
@@ -51,17 +61,7 @@ const ProjectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/EdsonKL/BuscadorDeCEP-Javascript",
     previewUrl: "https://main--thriving-melba-08af46.netlify.app",
-  },
-  {
-    id: 6,
-    title: "Calculadora.js",
-    description:
-      "Uma calculadora com funcionalidades simples para operações normais e sistema de copiar o resultado e modo escuro e claro",
-    image: "/project6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/EdsonKL/Calculadora-Javascript/tree/main/src",
-    previewUrl: "https://main--bucolic-bienenstitch-42aff8.netlify.app",
-  },
+  }
 ];
 
 function ProjectsSection() {

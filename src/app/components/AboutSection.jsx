@@ -48,9 +48,9 @@ function AboutSection() {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }}
+    <motion.div initial={{ opacity: 0.2 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 3.8 }}>
+      transition={{ duration: 1.2 }}>
 
       <section id="about" className="text-white pt-10">
         <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap16 sm:py-16 xl:16">

@@ -8,8 +8,10 @@ import axios from "axios";
 
 function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    setLoading(true)
     e.preventDefault();
     const response = await axios.post("/api/send", {
       name: e.target.name.value,
@@ -19,8 +21,10 @@ function EmailSection() {
     });
     if (response.status === 200) {
       setEmailSubmitted(true);
+      e.target.reset();
     }
     console.log(response.data);
+    setLoading(false)
   };
 
   return (
@@ -115,7 +119,7 @@ function EmailSection() {
             type="submit"
             className="bg-blue-700 hover:bg-blue-900 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
-            Enviar Mensagem
+            {loading ? "Enviando..." : "Enviar Mensagem"}
           </button>
           {emailSubmitted && (
             <p className="text-green-500 text-sm mt-2">

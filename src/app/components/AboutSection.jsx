@@ -17,6 +17,9 @@ const TAB_DATA = [
         <li>Javascript</li>
         <li>Typescript</li>
         <li>Jest</li>
+        <li>Axios</li>
+        <li>Tanstack Query</li>
+        <li>Material UI</li>
         <li>Tailwind</li>
         <li>Bootstrap</li>
         <li>HTML</li>
@@ -32,6 +35,20 @@ const TAB_DATA = [
         <li>Node.js</li>
         <li>Express</li>
         <li>MySQL</li>
+        <li>Prisma</li>
+        <li>Sequeliza</li>
+        <li>Bcrypt</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Servidor",
+    id: "server",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Linux</li>
+        <li>Docker</li>
+        <li>NGINX</li>
       </ul>
     ),
   },
@@ -54,7 +71,7 @@ function AboutSection() {
 
       <section id="about" className="text-white pt-10">
         <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap16 sm:py-16 xl:16">
-          <Image src={AboutImage} width={530} height={530} />
+          <Image alt="about image"  src={AboutImage} width={530} height={530} />
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl  font-bold text-white mb-4">Sobre mim</h2>
             <p className="text-base md:text-sm lg:text-lg ">
@@ -78,6 +95,13 @@ function AboutSection() {
               >
                 {" "}
                 Back-end{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("server")}
+                active={tab == "server"}
+              >
+                {" "}
+                Servidor{""}
               </TabButton>
             </div>
             <div className="mt-8 md:mt-4">

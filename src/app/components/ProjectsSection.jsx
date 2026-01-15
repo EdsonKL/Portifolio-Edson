@@ -39,8 +39,8 @@ const ProjectsData = [
       "Site desenvolvido no programa Trilhas-Inova. Utilizei React para desenvolver um site de cultura do Maranhão, com foco em design responsivo e componentes reutilizáveis",
     image: "/projeto4.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/EdsonKL/Calculadora-Javascript/tree/main/src",
-    previewUrl: "https://main--bucolic-bienenstitch-42aff8.netlify.app",
+    gitUrl: "https://github.com/EdsonKL/Site-CulturaMaranhense",
+    previewUrl: "https://desafio-v-secti.vercel.app",
   },
   {
     id: 5,

@@ -45,7 +45,8 @@ function HeroSection() {
             </button>
             <button className="px-1 py-1 w-full md:w-fit rounded-full bg-gradient-to-br from-emerald-500 via-cyan-700 to-blue-900 hover:bg-slate-800 text-white mt-3">
               <a
-                href="https://drive.google.com/file/d/1tF85vF6ncM-g6J9JAOV2K2ZQ4CL05wcr/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1tF85vF6ncM-g6J9JAOV2K2ZQ4CL05wcr/view?usp=sharing"
+                href="https://drive.google.com/file/d/1u_ZjcgZfEegIU5i_Vlh-rFnG23uyOqFj/view?usp=sharing"
                 target="_blank"
                 className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
               >
